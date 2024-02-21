@@ -1,0 +1,15 @@
+<view class="app">
+  <view class="search">
+    <form bindsubmit="formBindsubmit">
+      <input name="jdUrl" value="{{jdUrl}}" placeholder="输入京东商品链接"/>
+      <button formType="submit" style="background:rgb(27, 158, 27)">转链</button>
+    </form>
+  </view>
+  <view class="table_form">
+    <view class="textarea">
+      <textarea value="{{textdata}}" name="textdata" readonly="true" placeholder="返回链接" />
+    </view>
+    <button bindtap="copyUrl" style="background:rgb(27, 158, 27)" class="table_btn">复制</button>
+  </view>
+
+</view>
